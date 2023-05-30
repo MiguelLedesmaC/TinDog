@@ -9,12 +9,21 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+#foto-principal-container{
+    display: grid;
+    place-content: center;
+    width: 80vw;
+    background-color: red;
+}
 #foto-principal-container, 
-#foto-principal-container img {
+#foto-principal-container img { 
+    width: 80vw;
+    max-width: 35rem; 
     height: 30rem;
 }
 button {
@@ -42,12 +51,19 @@ button:hover {
     flex-wrap: wrap;
     gap: .8rem;
     max-width: 70vw;
+    max-height: 5rem;
     padding: 2rem;
     border-radius: 50px;
     margin: 10px 0;
+    overflow: scroll;
 }
+.contenedor-perros::-webkit-scrollbar{
+    width: 0em;
+}
+
+
 .contenedor-perros img {
-    height: 100px;
+    height: 90px;
     width: 100px;
     border-radius: 50%;
 }
@@ -58,7 +74,6 @@ button:hover {
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    margin-top: 180px;
     animation: spin 2s linear infinite;
 }
 @keyframes spin {
