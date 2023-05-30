@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eff9ff;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#foto-principal-container, 
+#foto-principal-container img {
+    height: 30rem;
+}
+button {
+    font-size: xx-large;
+    background-color: unset;
+    padding: 1rem;
+    margin: .8rem 1.2rem;
+    transition: .2s ease-in-out;
+}
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.escondido {
+    display: none !important;
+}
+#btn-like:hover, #contenedor-like-perros {
+    background-color: #00ff2a23;
+}
+#btn-dislike:hover, #contenedor-dislike-perros{
+    background-color: #94070779;
+}
+.contenedor-perros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    max-width: 70vw;
+    padding: 2rem;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+.contenedor-perros img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#spiner {
+    border: 1rem solid #f3f3f3;
+    border-top: 1rem solid #3498bd;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top: 180px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
